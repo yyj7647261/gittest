@@ -5,7 +5,7 @@ def f1(path):
     list=[]
     for home,dirs,files in os.walk(path):     #os.walk 返回当前目录 文件夹 文件 以及当前目录下
         for i in files:
-            list.append(os.path.join(home,i))   #遍历文件，添加到列表
+            list.append(os.path.join(home,i))   #遍历文件 添加到列表
     return list
 if __name__=="__main__":
     a1=f1(path)

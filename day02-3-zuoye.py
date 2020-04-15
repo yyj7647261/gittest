@@ -7,7 +7,7 @@ path="D:\gittest"
 def f(path,list):
    if os.path.isfile(path):
        list.append(path)
-   elif os.path.isdir(path):  #如果是文件夹
+   elif os.path.isdir(path):  #是文件夹
        for i in os.listdir(path):#遍历当前的文件夹下所有文件夹和文件夹
            newPath=os.path.join(path,i)
            f(newPath,list)
